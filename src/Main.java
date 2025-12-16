@@ -12,5 +12,13 @@ public static void greetUser(String name) {
         name = "Guest";
     }
     System.out.println("Hello, " + name + "!");
-} 
+    }
+public static void timeGreeting() {
+    int hour = java.time.LocalTime.now().getHour();
+    if (hour < 12) {
+        System.out.println("Good morning!");
+    } else {
+        System.out.println("Good evening!");
+    } 
+   }   
 }
